@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script&family=Exo&family=Fira+Sans:wght@300&family=Lato&family=Lobster&family=Playfair+Display&family=Quicksand&display=swap');
+*{
+    font-family:Quicksand;
+}
+
+#c{
+    color:black
+}
+#logo{
+    width: 3.6rem;
+}
+#logo:hover{
+    
+}
+a{
+    text-decoration: none;
+    color:#000000;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: black;
+}
+body {
+    
+    background-color: rgba(28, 3, 216, 0.478);
+color: #000000;
+font-family: sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+margin: 0px;
+}
+header{
+    width: 100%;
+    padding: 0px; 
+    font-size:1rem;
+border-bottom: 1px green solid;
+background-image: linear-gradient(45deg,rgb(7,243,125),rgba(28, 3, 216, 0.16));
+backdrop-filter: blur(15px);
+position: sticky;
+top: 0px;
+animation: headerAni 1s ease infinite;
+box-shadow: 0px 0px 20px 1px green;
+justify-content: space-evenly;
+display: flex;
+justify-items: center;
+align-content: center;
+}
+
+#lc{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+main{
+width: 80%;
+}
+h1, h2, label {
+
+}
+h2{
+color:rgb(7,243,125);
+font-size: 2rem;
+font-weight: 100;
+
+}
+
+h1{
+text-align: center;
+
+
+font-weight: 600;
+letter-spacing: 6px;
+}
+
+form,#prev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#dpdn,#dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5{
+    border: 1px white solid;
+    margin: 10px;
+    padding: 10px 30px;
+    width: 50%;
+    border-radius: 15px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 10px 15px;
+}
+#cont1,#cont2,#cont3,#cont4,#cont5{
+    display: none;
+}
+#dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5{
+    display: none;
+}
+
+#cont{
+    
+    width: 50%;
+    
+    
+}
+
+
+label {
+display: block;
+margin-bottom: 0.5rem;
+}
+
+select, input[type="number"] {
+background-color: #212121;
+border: none;
+border-radius: 0.25rem;
+color: #fff;
+font-size: 1rem;
+padding: 0.5rem;
+width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+
+input[type="submit"] {
+background-color: #4caf50;
+border: none;
+border-radius: 0.25rem;
+color: #fff;
+cursor: pointer;
+font-size: 1rem;
+margin-top: 1rem;
+padding: 0.5rem;
+}
+
+input[type="submit"]:hover {
+background-color: #388e3c;
+}
+#prene{
+    display: flex;
+    justify-content:space-between;
+    margin: 20px 0px 10px 0px;
+}
+#pre,#next,#next1,#next2,#next3,#next4,#next5{
+    border: 1px white solid;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    width: 40%;
+    padding: 5px 10px;
+    background-color:rgb(7,243,125);
+    transition:all 0.3s ease;
+}
+#pre:hover,#next:hover,#next1:hover,#next2:hover,#next3:hover,#next4:hover,#next5:hover{
+    width: 50%;
+}
+@keyframes headerAni{
+    0%{
+        background-position: 0% 0%;
+        
+    }
+    60%{
+        background-position: 100% 100%;
+        
+    }
+    100%{
+
+    }
+
+}
+footer{
+    text-align: center;
+}
+footer>#cred{
+    font-size:11px;
+    text-align: left;
+    width: 82vw;
+    padding: 10px;
+}
+.mb, .nm{
+    display: inline-block;
+  }
+  .mb{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    
+  }
+  #heart{
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.8s ease;
+    animation: beats 1s ease infinite;
+    width: 20px;
+  }
+  #heart:hover {
+    cursor: pointer;
+    color:rgb(7,243,125);
+  }
+  #heart:active {
+    transform: rotate(40deg);
+    position: relative;
+    bottom: 15px;
+  }
+  @keyframes beats{
+    0%{
+      font-size: 1rem;
+      transform: rotate(10deg);
+    }
+    20%{
+      font-size: 1.2rem;
+    }
+    50%{
+      font-size: 1.3rem;
+    }
+    100%{
+      font-size: 1rem;
+    }
+  }
+@media screen and (max-width: 1015px) {
+    #dpdn,#dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5{
+        width: 80%;
+    }
+    #cont{
+        width: 80%;
+    }
+}
+  
