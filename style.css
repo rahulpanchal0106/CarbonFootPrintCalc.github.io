@@ -32,6 +32,7 @@ body {
     align-items: center;
     padding: 0px;
     margin: 0px;
+    transition: all 0.3s ease;
 }
 header{
     width: 100%;
@@ -82,7 +83,10 @@ form,#prev{
     flex-direction: column;
     align-items: center;
 }
-#dpdn,#dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5{
+#prev{
+    margin-top: 25px;
+}
+#dpdn,#dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5,#dpdn6{
     border: 1px white solid;
     margin: 10px;
     padding: 10px 30px;
@@ -93,28 +97,18 @@ form,#prev{
     flex-direction: column;
     align-items: center;
     background-color: white;
-    box-shadow: 5px 10px 15px;
+    box-shadow: 0px 5px 20px;
 }
-/* #active{
-    display:flex;
-    border: 1px white solid;
-    margin: 10px;
-    padding: 10px 30px;
-    width: 50%;
-    border-radius: 15px;
-    color: #000000;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    box-shadow: 5px 10px 15px;
-} */
+#fuelEff{
+    display: none;
+}
 
-#dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5{
+#dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5,#dpdn6{
     display: none;
 }
 
 #cont{
-    
+    padding-bottom: 20px;
     width: 50%;
     
     
@@ -122,55 +116,95 @@ form,#prev{
 
 
 label {
-display: block;
-margin-bottom: 0.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 select, input[type="number"] {
-background-color: #212121;
-border: none;
-border-radius: 0.25rem;
-color: #fff;
-font-size: 1rem;
-padding: 0.5rem;
-width: 100%;
+    background-color: #212121;
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
 }
 
 input[type="number"]::-webkit-inner-spin-button, 
 input[type="number"]::-webkit-outer-spin-button { 
--webkit-appearance: none; 
-margin: 0; 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 input[type="submit"] {
-background-color: #4caf50;
-border: none;
-border-radius: 0.25rem;
-color: #fff;
-cursor: pointer;
-font-size: 1rem;
-margin-top: 1rem;
-padding: 0.5rem;
+    background-color: rgb(7,243,125);
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 input[type="submit"]:hover {
-background-color: #388e3c;
+    color: black;
+    font-size: 1.1rem;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+    transition: all 0.3s ease;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    transition: all 0.3s ease;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 #prene{
     display: flex;
     justify-content:space-between;
     margin: 20px 0px 10px 0px;
+    width: 40%;
 }
-#pre,#next,#next1,#next2,#next3,#next4,#next5{
-    border: 1px white solid;
+#pre,#next,#home{
+    border: 1px rgba(255, 255, 255, 0) solid;
     border-radius: 4px;
     font-size: 0.7rem;
     width: 40%;
     padding: 5px 10px;
     background-color:rgb(7,243,125);
     transition:all 0.3s ease;
+    
 }
-#pre:hover,#next:hover{
+#pre:hover,#next:hover,#home:hover{
+    border: 1px white solid;
     width: 50%;
 }
 @keyframes headerAni{
@@ -189,6 +223,11 @@ background-color: #388e3c;
 }
 footer{
     text-align: center;
+    position:relative;
+    bottom: -70px;
+    width: 100%;
+    margin: 0px;
+    
 }
 footer>#cred{
     font-size:11px;
@@ -199,13 +238,13 @@ footer>#cred{
 .mb, .nm{
     display: inline-block;
   }
-  .mb{
+.mb{
     color: rgb(255, 255, 255);
     opacity: 0.7;
     
   }
   #heart{
-    color: rgb(255, 255, 255);
+    color: rgb(7,243,125);
     background: none;
     border: none;
     font-size: 1rem;
@@ -215,7 +254,7 @@ footer>#cred{
   }
   #heart:hover {
     cursor: pointer;
-    color:rgb(7,243,125);
+    color:white;
   }
   #heart:active {
     transform: rotate(40deg);
@@ -243,6 +282,14 @@ footer>#cred{
     }
     #cont{
         width: 80%;
+    }
+}
+@media screen and (max-width: 530px) {
+    #prene{
+        width: 80%;
+    }
+    #next,#pre{
+        width: 40%;
     }
 }
   
