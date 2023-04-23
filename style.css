@@ -25,29 +25,29 @@ a:visited{
 body {
     
     background-color: rgba(28, 3, 216, 0.478);
-color: #000000;
-font-family: sans-serif;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-margin: 0px;
+    color: #000000;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
 }
 header{
     width: 100%;
     padding: 0px; 
     font-size:1rem;
-border-bottom: 1px green solid;
-background-image: linear-gradient(45deg,rgb(7,243,125),rgba(28, 3, 216, 0.16));
-backdrop-filter: blur(15px);
-position: sticky;
-top: 0px;
-animation: headerAni 1s ease infinite;
-box-shadow: 0px 0px 20px 1px green;
-justify-content: space-evenly;
-display: flex;
-justify-items: center;
-align-content: center;
+    border-bottom: 1px green solid;
+    background-image: linear-gradient(45deg,rgb(7,243,125),rgba(28, 3, 216, 0.16));
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0px;
+    animation: headerAni 1s ease infinite;
+    box-shadow: 0px 0px 20px 1px green;
+    justify-content: space-evenly;
+    display: flex;
+    justify-items: center;
+    align-content: center;
 }
 
 #lc{
@@ -57,24 +57,24 @@ align-content: center;
     justify-content: center;
 }
 main{
-width: 80%;
+    width: 80%;
 }
 h1, h2, label {
 
 }
 h2{
-color:rgb(7,243,125);
-font-size: 2rem;
-font-weight: 100;
+    color:rgb(7,243,125);
+    font-size: 2rem;
+    font-weight: 100;
 
 }
 
 h1{
-text-align: center;
+    text-align: center;
 
 
-font-weight: 600;
-letter-spacing: 6px;
+    font-weight: 600;
+    letter-spacing: 6px;
 }
 
 form,#prev{
@@ -95,9 +95,20 @@ form,#prev{
     background-color: white;
     box-shadow: 5px 10px 15px;
 }
-#cont1,#cont2,#cont3,#cont4,#cont5{
-    display: none;
-}
+/* #active{
+    display:flex;
+    border: 1px white solid;
+    margin: 10px;
+    padding: 10px 30px;
+    width: 50%;
+    border-radius: 15px;
+    color: #000000;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 10px 15px;
+} */
+
 #dpdn1,#dpdn2,#dpdn3,#dpdn4,#dpdn5{
     display: none;
 }
@@ -159,7 +170,7 @@ background-color: #388e3c;
     background-color:rgb(7,243,125);
     transition:all 0.3s ease;
 }
-#pre:hover,#next:hover,#next1:hover,#next2:hover,#next3:hover,#next4:hover,#next5:hover{
+#pre:hover,#next:hover{
     width: 50%;
 }
 @keyframes headerAni{

@@ -1,33 +1,174 @@
 //Functioning the next and previous button
 
-document.getElementById("pre").style.display="none";
+// document.getElementById("pre").style.display="none";
+// document.getElementById("next").onclick=()=>{
+//   document.getElementById("pre").style.display="block";
+//   document.getElemenetById("dpdn").style.display="none";
+
+//   document.getElementById("next1").onclick=()=>{
+//     document.getElementById("dpdn").style.display="none";
+//       document.getElementById("cont1").style.display="block";
+//       document.getElementById("dpdn1").style.display="flex";
+//   }
+//   document.getElementById("next2").onclick=()=>{
+//     document.getElementById("cont2").style.display="block";
+//       document.getElementById("dpdn2").style.display="flex";
+//   }
+//   document.getElementById("next3").onclick=()=>{
+//     document.getElementById("dpdn3").style.display="flex";
+//     document.getElementById("cont3").style.display="block";
+//   }
+//   document.getElementById("next4").onclick=()=>{
+//     document.getElementById("dpdn4").style.display="flex";
+//     document.getElementById("cont4").style.display="block";
+//   }
+//   document.getElementById("next5").onclick=()=>{
+//     document.getElementById("dpdn5").style.display="flex";
+//     document.getElementById("cont5").style.display="block";
+//   }
+let count=0;
 document.getElementById("next").onclick=()=>{
-  document.getElementById("pre").style.display="block";
-  document.getElemenetById("dpdn").style.display="none";
-
-  document.getElementById("next1").onclick=()=>{
-    document.getElementById("dpdn").style.display="none";
-      document.getElementById("cont1").style.display="block";
+  count++;
+  console.log(count);
+  switch (count){
+    case 0:
+      document.getElementById("dpdn").style.display="flex";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+    case 1:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
       document.getElementById("dpdn1").style.display="flex";
-  }
-  document.getElementById("next2").onclick=()=>{
-    document.getElementById("cont2").style.display="block";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 2:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
       document.getElementById("dpdn2").style.display="flex";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 3:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="flex";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 4:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="flex";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 5:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="flex";
+      break;
+    case 6:
+      
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="flex";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      count=1;
+      break;
   }
-  document.getElementById("next3").onclick=()=>{
-    document.getElementById("dpdn3").style.display="flex";
-    document.getElementById("cont3").style.display="block";
-  }
-  document.getElementById("next4").onclick=()=>{
-    document.getElementById("dpdn4").style.display="flex";
-    document.getElementById("cont4").style.display="block";
-  }
-  document.getElementById("next5").onclick=()=>{
-    document.getElementById("dpdn5").style.display="flex";
-    document.getElementById("cont5").style.display="block";
-  }
-
 }
+document.getElementById("pre").onclick=()=>{
+  count--;
+  switch (count){
+    case 0:
+      
+      document.getElementById("dpdn").style.display="flex";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      count=5;
+      break;
+    case 1:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="flex";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 2:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="flex";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 3:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="flex";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 4:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="flex";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+    case 5:
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="none";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="flex";
+      break;
+    case 6:
+      count=1;
+      console.log(count);
+      document.getElementById("dpdn").style.display="none";
+      document.getElementById("dpdn1").style.display="flex";
+      document.getElementById("dpdn2").style.display="none";
+      document.getElementById("dpdn3").style.display="none";
+      document.getElementById("dpdn4").style.display="none";
+      document.getElementById("dpdn5").style.display="none";
+      break;
+  }
+}
+
+
+// }
 // Get form elements
 // const form = document.querySelector('form');
 // const transportationType = form.elements['transportation-type'];
