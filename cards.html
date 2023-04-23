@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slideshow Example</title>
+	<style>
+		.card {
+			display: none;
+		}
+		.active {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="card active">
+		<h2>Card 1</h2>
+		<p>This is the first card.</p>
+	</div>
+	<div class="card">
+		<h2>Card 2</h2>
+		<p>This is the second card.</p>
+	</div>
+	<div class="card">
+		<h2>Card 3</h2>
+		<p>This is the third card.</p>
+	</div>
+	<button id="nextBtn">Next</button>
+	<script>
+		const cards = document.querySelectorAll('.card');
+		let currentCard = 0;
+
+		function showCard(n) {
+			cards[currentCard].classList.remove('active');
+			currentCard = (n + cards.length) % cards.length;
+			cards[currentCard].classList.add('active');
+		}
+
+		document.getElementById('nextBtn').addEventListener('click', () => {
+			showCard(currentCard + 1);
+		});
+	</script>
+</body>
+
+
+
+</html>

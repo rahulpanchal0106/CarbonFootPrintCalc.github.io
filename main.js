@@ -3,6 +3,8 @@
 document.getElementById("pre").style.display="none";
 document.getElementById("next").onclick=()=>{
   document.getElementById("pre").style.display="block";
+  document.getElemenetById("dpdn").style.display="none";
+
   document.getElementById("next1").onclick=()=>{
     document.getElementById("dpdn").style.display="none";
       document.getElementById("cont1").style.display="block";

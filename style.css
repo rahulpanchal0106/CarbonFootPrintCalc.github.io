@@ -200,7 +200,7 @@ footer>#cred{
     font-size: 1rem;
     transition: all 0.8s ease;
     animation: beats 1s ease infinite;
-    width: 20px;
+    width: 30px;
   }
   #heart:hover {
     cursor: pointer;
