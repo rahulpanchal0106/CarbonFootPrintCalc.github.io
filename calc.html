@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="container">
+        <div id="calc-body">
+            <div id="display" type="text" name="display">
+                
+            </div>
+            <div id="btns">
+                <div id="others">
+                    <div id="logo">Calculator</div>
+                    <div id="other-btn">
+                        <button onclick="display.innerHTML = ''">AC</button>
+                        <button onclick="display.innerHTML=display.innerHTML.toString().slice(0,-1)">Del</button>
+                        <!-- <button>Sci</button> -->
+                    </div>
+                </div>
+                <div id="btn-numbers">
+                    <button id="7" onclick="display.innerHTML+='7'">7</button>
+                    <button id="8" onclick="display.innerHTML+='8'">8</button>
+                    <button id="9" onclick="display.innerHTML+='9'">9</button>
+                   
+                    <button id="4" onclick="display.innerHTML+='4'">4</button>
+                    <button id="5" onclick="display.innerHTML+='5'">5</button>
+                    <button id="6" onclick="display.innerHTML+='6'">6</button>
+                    
+                    <button id="1" onclick="display.innerHTML+='1'">1</button>
+                    <button id="2" onclick="display.innerHTML+='2'">2</button>
+                    <button id="3" onclick="display.innerHTML+='3'">3</button>
+                    <button id="0" onclick="display.innerHTML+='0'">0</button>
+                    <button id="=" onclick="display.innerHTML=eval(display.innerHTML)">=</button>
+                </div>
+                <div id="btn-operations">
+                    <button id="/" onclick="display.innerHTML+='/'">/</button>
+                    <button id="*" onclick="display.innerHTML+='*'"><sub>*</sub></button>
+                    <button id="+" onclick="display.innerHTML+='+'">+</button>
+                    <button id="-" onclick="display.innerHTML+='-'">-</button>
+                    <button id="%" onclick="display.innerHTML+='%'">%</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calc.js"></script>
+</html>
