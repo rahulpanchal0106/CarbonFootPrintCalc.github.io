@@ -4,6 +4,7 @@ let count=0;
 document.getElementById("pre").style.display="none";
 document.getElementById("next").onclick=()=>{
   count++;
+  
   console.log(count);
   switch (count){
     case 0:
@@ -76,6 +77,10 @@ document.getElementById("next").onclick=()=>{
       count=1;
       break;
   }
+},{
+  duration: 3000,
+  fill: "forwards",
+  easing: "ease"
 }
 document.getElementById("pre").onclick=()=>{
   count--;
